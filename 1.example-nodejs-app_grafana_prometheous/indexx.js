@@ -5,6 +5,7 @@ const apiMetrics = require('prometheus-api-metrics');
 server.use(apiMetrics())
 const register = new client.Registry();
 
+
 // Probe every 5th second.
 const intervalCollector = client.collectDefaultMetrics({prefix: 'node_', timeout: 5000, register});
 
@@ -54,6 +55,14 @@ server.get('/metrics', (req, res) => {
 server.get('/hello', (req, res) => {
   res.status(200).send({'Message':'Hello World!'})
 })
+
+server.get('/authErr', (req, res) => {
+   res.status(401).send({'Message':'Hello World!'})
+ })
+
+ server.get('/internalErr', (req, res) => {
+   res.status(400).send({'Message':'Hello World!'})
+ })
 
 console.log('Server listening to 8080, metrics exposed on /metrics endpoint');
 server.listen(8080);

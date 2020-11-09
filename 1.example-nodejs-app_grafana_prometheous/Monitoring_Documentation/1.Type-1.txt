@@ -1,0 +1,18 @@
+..............................
+..............................
+1. Fullow ->
+https://codersociety.com/blog/articles/nodejs-application-monitoring-with-prometheus-and-grafana
+
+
+2. node inedxx // Run server
+
+3. run grafana docker
+
+4. run promtheous
+
+5. Create promtheous default data store
+
+6. search  and install plugin "NodeJS Application Dashboard"
+https://grafana.com/grafana/dashboards/12230
+
+7. select "NodeJS Application Dashboard" to see deails
