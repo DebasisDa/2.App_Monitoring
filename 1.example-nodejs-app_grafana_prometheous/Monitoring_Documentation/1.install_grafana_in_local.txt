@@ -1,0 +1,13 @@
+...........................................
+...........................................
+Install in local (ubuntu) system ::
+
+Documentation ::
+https://computingforgeeks.com/how-to-install-grafana-on-ubuntu-debian/
+
+Steps ::
+    0. Follow above steps
+    1. http://localhost:3000 -> will open grafana
+    2. Login : user name : admin, password: admin
+    3. change password
+    4. you can add viwer/manager user.

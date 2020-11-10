@@ -5,14 +5,21 @@ https://codersociety.com/blog/articles/nodejs-application-monitoring-with-promet
 
 
 2. node inedxx // Run server
+Running on ->> local_server_address:8080
 
-3. run grafana docker
+3. run promtheous docker
+Running on ->>  local_server_address:9090
 
-4. run promtheous
-
-5. Create promtheous default data store
+4. install and run grafana in local system
+Running on ->>  local_server_address:3000
+ 
+5. Create promtheous default data store -> add
+    server address local_server_address:9090
 
 6. search  and install plugin "NodeJS Application Dashboard"
 https://grafana.com/grafana/dashboards/12230
+
+7. Nodejs monitor plugin install 
+https://grafana.com/grafana/dashboards/11956
 
 7. select "NodeJS Application Dashboard" to see deails
